@@ -1,0 +1,20 @@
+/* Universal selector */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* Margin/bording and padding is not counted in total width and height */
+
+    box-sizing: inherit; /* Now box-sizing will be inherited by what we put in body */
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; /* Which makes 10 px now the default root font size */
+}
+
+/* Using power of inheritance, this will all be inherited to child elements */
+body {
+    box-sizing: border-box;
+}
